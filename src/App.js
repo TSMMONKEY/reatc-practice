@@ -1,23 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
+import Functional from './components/Functional';
+import ClassComp from './components/ClassComp';
+import './components/Styles.css'
+import EventBinder from './components/EventBinder';
+import Form from './components/Form';
+import ParentComponet from './components/ParentComponet';
+import LifecycleA from './components/LifecycleA';
+import Refs from './components/Refs';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundery from './components/ErrorBoundery';
+import ClickCounter from './components/ClickCounter';
+import HoverComponent from './components/HoverComponent';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ClickCounter name="stevovo"></ClickCounter>
+      <HoverComponent></HoverComponent>
+      {/* <ErrorBoundery>
+        <Hero heroName="Batman" />
+      </ErrorBoundery>
+      <ErrorBoundery>
+        <Hero heroName="Superman" />
+      </ErrorBoundery>
+      <ErrorBoundery>
+        <Hero heroName="Jocker" />
+      </ErrorBoundery> */}
+      {/* <PortalDemo /> */}
+      {/* <LifecycleA>
+      Lifecycle A
+      </LifecycleA> */}
+      {/* <Refs/> */}
+      {/* <ParentComponet /> */}
+      
+      {/* <Form /> */}
+      {/* <EventBinder/> */}
+      {/* <Functional>awe</Functional>
+      <ClassComp>
+       awe
+      </ClassComp> */}
     </div>
   );
 }
